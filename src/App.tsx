@@ -5,6 +5,7 @@ import Login from "./components/login/Login";
 import Header from "./components/header/Header";
 import SignUp from "./components/signup/SignUp";
 import MoreSteps from "./components/signup/MoreSteps";
+import Hosting from "./components/hosting/Hosting";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/auth-steps" element={<MoreSteps />} />
+          <Route path="/platform-usage" element={<Hosting />} />
         </Routes>
       </Router>
     </div>
