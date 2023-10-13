@@ -4,6 +4,7 @@ import "./components/style.css";
 import Login from "./components/login/Login";
 import Header from "./components/header/Header";
 import SignUp from "./components/signup/SignUp";
+import MoreSteps from "./components/signup/MoreSteps";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="dashboard" element={<h1>Dashboard</h1>} />
+          <Route path="/auth-steps" element={<MoreSteps />} />
         </Routes>
       </Router>
     </div>
