@@ -1,4 +1,9 @@
 # Node.js React Web App to Linux on Azure
+- task: KubernetesManifest@1
+  inputs:
+    action: 'deploy'
+    connectionType: 'kubernetesServiceConnection'
+    kubernetesServiceConnection: 'AISTUDIO-WEBUI-EAST-AISTUDIO-CUBR-default-1697371655067'
 # Build a Node.js React app and deploy it to Azure as a Linux web app.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
